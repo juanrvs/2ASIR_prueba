@@ -5,14 +5,14 @@ Hemos creado el proyecto typescript que nos crea un fichero .json, hemos configu
 
 Comandos vistos:
 
-git init
-git add .
-tsc --init
-tsc -w
-git commit -m "First commit"
-git remote -v
-git push -u origin master
-git remote add origin remote repository URL
+    git init
+    git add .
+    tsc --init
+    tsc -w
+    git commit -m "First commit"
+    git remote -v
+    git push -u origin master
+    git remote add origin remote repository URL
 
 ¿Cómo creamos nuestro proyecto en github?
 
@@ -56,3 +56,13 @@ Confirmamos los archivos que se han almacenado en el repositorio local con:
 Con el siguiente comando los cambios realizados se subiran a nuestro repositorio de GitHub.
 
     git push -u origin master
+
+¿Que hacer si nos sale que la ejecución de comandos esta deshabilitada en nuestro sistema?
+
+    Esto es debido a que por motivos de seguridad Powershell no permite la ejecución de script en los que no confías, es decir, aquellos script que no son ejecutados por ti. Este problema tiene fácil solución que paso a explicar.
+
+    Para solucionarlo simplemente tendremos que abrir una consola de Powershell como Administrador y ejecutar el siguiente comando.
+
+        Set-ExecutionPolicy Unrestricted
+
+    Una vez lanzada la instrucción Powershell nos dará un aviso el cual debemos confirmar.
