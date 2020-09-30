@@ -4,3 +4,4 @@ Hemos instalado node.js y typescript con npm install -g typescript, según la do
 Comandos vistos:
 git init
 tsc --init
+tsc -w
